@@ -24,7 +24,7 @@
 *.zip
 
 # Project gen files
-.idea/
+.idea
 .allure/
 .gradle/
 allure-results/
@@ -38,5 +38,7 @@ target/
 .project
 .settings/org.eclipse.buildship.core.prefs
 .vscode
-/gradlew
-/gradlew.bat
+gradlew
+gradlew.bat
+gradle/wrapper
+settings.gradle

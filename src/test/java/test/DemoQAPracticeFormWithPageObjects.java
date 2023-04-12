@@ -6,49 +6,37 @@ import org.junit.jupiter.api.Test;
 
 public class DemoQAPracticeFormWithPageObjects extends TestBase{
 
+    TestData data = new TestData();
+
 
 
     @Test
     void practiceForm () {
-        String firstname = "Roman",
-                lastname = "Alexeev",
-                email = "alexeev@mail.ru",
-                gender = "Male",
-                number = "5551557896",
-                day = "30",
-                month = "March",
-                year = "1990",
-                subject = "Arts",
-                hobbie = "Music",
-                imgName = "1.png",
-                imgResource = "img/1.png",
-                address = "SPb",
-                state = "Haryana",
-                city = "Karnal";
+
         registrationPage.openPage()
-                .setFirstName(firstname)
-                .setLastName(lastname)
-                .setEmail(email)
-                .setGender(gender)
-                .setNumber(number)
-                .setBirthDay(day, month, year)
-                .setSubject(subject)
-                .setHobbie(hobbie)
-                .setImg(imgResource)
-                .setCurrentAddress(address)
-                .setStateCity(state, city)
+                .setFirstName(data.firstname)
+                .setLastName(data.lastname)
+                .setEmail(data.email)
+                .setGender(data.gender)
+                .setNumber(data.number)
+                .setBirthDay(data.day, data.month, data.year)
+                .setSubject(data.subject)
+                .setHobbie(data.hobbie)
+                .setImg(data.imgResource)
+                .setCurrentAddress(data.address)
+                .setStateCity(data.state, data.city)
                 .setClickSubmit()
                 .setModalka()
-                .setResultModalka("Student Name", firstname + " " + lastname)
-                .setResultModalka("Student Email", email)
-                .setResultModalka("Gender", gender)
-                .setResultModalka("Mobile", number)
-                .setResultModalka("Date of Birth", day + " " + month + "," + year)
-                .setResultModalka("Subjects", subject)
-                .setResultModalka("Hobbies", hobbie)
-                .setResultModalka("Picture", imgName)
-                .setResultModalka("Address", address)
-                .setResultModalka("State and City", state + " " + city);
+                .setResultModalka("Student Name", data.firstname + " " + data.lastname)
+                .setResultModalka("Student Email", data.email)
+                .setResultModalka("Gender", data.gender)
+                .setResultModalka("Mobile", data.number)
+                .setResultModalka("Date of Birth", data.day + " " + data.month + "," + data.year)
+                .setResultModalka("Subjects", data.subject)
+                .setResultModalka("Hobbies", data.hobbie)
+                .setResultModalka("Picture", data.imgName)
+                .setResultModalka("Address", data.address)
+                .setResultModalka("State and City", data.state + " " + data.city);
 
     }
 }

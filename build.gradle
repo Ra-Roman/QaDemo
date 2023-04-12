@@ -12,9 +12,8 @@ repositories {
 dependencies {
     testImplementation (
             'org.junit.jupiter:junit-jupiter:5.8.1',
-
-
-            'com.codeborne:selenide:6.12.3'
+            'com.codeborne:selenide:6.12.3',
+            'com.github.javafaker:javafaker:1.0.2'
 
 
     )

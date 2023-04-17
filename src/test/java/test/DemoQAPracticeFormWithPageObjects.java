@@ -2,13 +2,13 @@ package test;
 
 
 import org.junit.jupiter.api.Test;
+import pages.RegistrationPage;
 
 
 public class DemoQAPracticeFormWithPageObjects extends TestBase{
 
     TestData data = new TestData();
-
-
+    RegistrationPage registrationPage = new RegistrationPage();
 
     @Test
     void practiceForm () {
@@ -21,7 +21,7 @@ public class DemoQAPracticeFormWithPageObjects extends TestBase{
                 .setNumber(data.number)
                 .setBirthDay(data.day, data.month, data.year)
                 .setSubject(data.subject)
-                .setHobbie(data.hobbie)
+                .setHobbie(data.hobby)
                 .setImg(data.imgResource)
                 .setCurrentAddress(data.address)
                 .setStateCity(data.state, data.city)
@@ -33,7 +33,7 @@ public class DemoQAPracticeFormWithPageObjects extends TestBase{
                 .setResultModalka("Mobile", data.number)
                 .setResultModalka("Date of Birth", data.day + " " + data.month + "," + data.year)
                 .setResultModalka("Subjects", data.subject)
-                .setResultModalka("Hobbies", data.hobbie)
+                .setResultModalka("Hobbies", data.hobby)
                 .setResultModalka("Picture", data.imgName)
                 .setResultModalka("Address", data.address)
                 .setResultModalka("State and City", data.state + " " + data.city);

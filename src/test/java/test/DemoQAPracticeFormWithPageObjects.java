@@ -1,8 +1,12 @@
 package test;
 
 
+import com.codeborne.selenide.logevents.SelenideLogger;
+import io.qameta.allure.selenide.AllureSelenide;
 import org.junit.jupiter.api.Test;
 import pages.RegistrationPage;
+
+import static io.qameta.allure.Allure.step;
 
 
 public class DemoQAPracticeFormWithPageObjects extends TestBase{
@@ -12,7 +16,9 @@ public class DemoQAPracticeFormWithPageObjects extends TestBase{
 
     @Test
     void practiceForm () {
+        SelenideLogger.addListener("allure", new AllureSelenide());
 
+        step("Открытие страницы и ввод данных", () -> {
         registrationPage.openPage()
                 .setFirstName(data.firstname)
                 .setLastName(data.lastname)
@@ -25,8 +31,11 @@ public class DemoQAPracticeFormWithPageObjects extends TestBase{
                 .setImg(data.imgResource)
                 .setCurrentAddress(data.address)
                 .setStateCity(data.state, data.city)
-                .setClickSubmit()
-                .setModalka()
+                .setClickSubmit();
+        });
+
+        step("Проверка введенных данных", () -> {
+        registrationPage.setModalka()
                 .setResultModalka("Student Name", data.firstname + " " + data.lastname)
                 .setResultModalka("Student Email", data.email)
                 .setResultModalka("Gender", data.gender)
@@ -37,6 +46,7 @@ public class DemoQAPracticeFormWithPageObjects extends TestBase{
                 .setResultModalka("Picture", data.imgName)
                 .setResultModalka("Address", data.address)
                 .setResultModalka("State and City", data.state + " " + data.city);
+        });
 
     }
 }

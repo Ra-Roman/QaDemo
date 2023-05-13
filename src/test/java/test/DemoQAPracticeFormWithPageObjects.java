@@ -3,12 +3,13 @@ package test;
 
 import com.codeborne.selenide.logevents.SelenideLogger;
 import io.qameta.allure.selenide.AllureSelenide;
+import org.junit.jupiter.api.Tag;
 import org.junit.jupiter.api.Test;
 import pages.RegistrationPage;
 
 import static io.qameta.allure.Allure.step;
 
-
+@Tag("simple")
 public class DemoQAPracticeFormWithPageObjects extends TestBase{
 
     TestData data = new TestData();

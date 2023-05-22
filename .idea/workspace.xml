@@ -4,9 +4,9 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="7362ddcb-97c8-485e-a0d2-50ac5ebaa9fd" name="Changes" comment="Подключение артефактов">
+    <list default="true" id="7362ddcb-97c8-485e-a0d2-50ac5ebaa9fd" name="Changes" comment="Подключены параметры браузер и версия">
+      <change afterPath="$PROJECT_DIR$/notifications/config.json" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/test/java/test/TestBase.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/test/TestBase.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -83,12 +83,15 @@
       <recent name="C:\Users\roman\IdeaProjects\QaDemo\src\test\java" />
       <recent name="C:\Users\roman\IdeaProjects\QaDemo" />
     </key>
+    <key name="MoveFile.RECENT_KEYS">
+      <recent name="C:\Users\roman\IdeaProjects\QaDemo\notifications" />
+    </key>
     <key name="CopyClassDialog.RECENTS_KEY">
       <recent name="test.TestAllure" />
       <recent name="test" />
     </key>
   </component>
-  <component name="RunManager" selected="Gradle.DemoQAPracticeFormWithPageObjects">
+  <component name="RunManager" selected="Gradle.QaDemo [allureReport]">
     <configuration name="DemoQAPracticeFormWithPageObjects" type="GradleRunConfiguration" factoryName="Gradle" temporary="true">
       <ExternalSystemSettings>
         <option name="executionName" />
@@ -205,9 +208,9 @@
     </configuration>
     <recent_temporary>
       <list>
+        <item itemvalue="Gradle.QaDemo [allureReport]" />
         <item itemvalue="Gradle.DemoQAPracticeFormWithPageObjects" />
         <item itemvalue="Gradle.QaDemo [allureServe]" />
-        <item itemvalue="Gradle.QaDemo [allureReport]" />
         <item itemvalue="Gradle.QaDemo [test]" />
         <item itemvalue="Gradle.DemoQAPracticeFormWithPageObjects.practiceForm" />
       </list>
@@ -341,7 +344,14 @@
       <option name="project" value="LOCAL" />
       <updated>1684765052554</updated>
     </task>
-    <option name="localTasksCounter" value="18" />
+    <task id="LOCAL-00018" summary="Подключены параметры браузер и версия">
+      <created>1684775302358</created>
+      <option name="number" value="00018" />
+      <option name="presentableId" value="LOCAL-00018" />
+      <option name="project" value="LOCAL" />
+      <updated>1684775302358</updated>
+    </task>
+    <option name="localTasksCounter" value="19" />
     <servers />
   </component>
   <component name="VcsManagerConfiguration">
@@ -356,6 +366,7 @@
     <MESSAGE value="Подключение selenoid" />
     <MESSAGE value="Подключение артефактов для аллюр" />
     <MESSAGE value="Подключение артефактов" />
-    <option name="LAST_COMMIT_MESSAGE" value="Подключение артефактов" />
+    <MESSAGE value="Подключены параметры браузер и версия" />
+    <option name="LAST_COMMIT_MESSAGE" value="Подключены параметры браузер и версия" />
   </component>
 </project>

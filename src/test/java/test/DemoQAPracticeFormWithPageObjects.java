@@ -17,8 +17,6 @@ public class DemoQAPracticeFormWithPageObjects extends TestBase{
 
     @Test
     void practiceForm () {
-        SelenideLogger.addListener("allure", new AllureSelenide());
-
         step("Открытие страницы и ввод данных", () -> {
         registrationPage.openPage()
                 .setFirstName(data.firstname)

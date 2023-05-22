@@ -16,7 +16,7 @@ public class RegistrationPage {
 
     public RegistrationPage openPage() {
         Configuration.pageLoadStrategy = "eager";
-        open("https://demoqa.com/automation-practice-form");
+        open("/automation-practice-form");
         $(".practice-form-wrapper").shouldHave(text(titleText));
         executeJavaScript("$('footer').remove()");
         executeJavaScript("$('#fixedban').remove()");

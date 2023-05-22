@@ -11,7 +11,6 @@ import static io.qameta.allure.Allure.step;
 
 @Tag("simple")
 public class DemoQAPracticeFormWithPageObjects extends TestBase{
-
     TestData data = new TestData();
     RegistrationPage registrationPage = new RegistrationPage();
 
